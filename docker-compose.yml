@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+  reverse-proxy:
+    image: traefik:v2.6
+    command: --api.insecure=true --providers.docker
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - app-proxy
+
+  front:
+    build:
+      context: ./docker/front/local
+    volumes:
+      - ./front:/usr/app/front
+    ports:
+      - '81:80'
+      - '9876:9876'
+      - '4200:4200'
+    environment:
+      - CHROME_BIN=google-chrome
+    command: ["yarn", "start"]
+    working_dir: /usr/app/front
+    networks:
+      - app-proxy
+    labels:
+      - traefik.http.routers.front.entrypoints=http
+      - traefik.http.routers.front.rule=Host(`portfolio.localhost`)
+      - traefik.http.services.front.loadbalancer.server.port=80
+
+networks:
+  app-proxy:
+    external: true
