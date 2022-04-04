@@ -1,3 +1,5 @@
-export enum routeEnum {
-    HOME = '',
+export enum RouteEnum {
+  HOME = '',
+  NEWS = 'whats-up',
+  CONTACT = 'contact',
 }

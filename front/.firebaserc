@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bapt-cave": {
+      "hosting": {
+        "front": [
+          "bapt-cave"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bapt-cave"
+  }
+}
