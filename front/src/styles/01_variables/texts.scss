@@ -1,2 +1,61 @@
+// ----- Font-variables ----- //
+$font-project-black: "Poppins-Black";
+$font-project-bold: "Poppins-Bold";
+$font-project-extra-bold: "Poppins-ExtraBold";
+$font-project-light: "Poppins-Light";
+$font-project-extra-light: "Poppins-ExtraLight";
+$font-project-medium: "Poppins-Medium";
+$font-project-regular: "Poppins-Light";
+$font-project-semi-bold: "Poppins-SemiBold";
+$font-project-thin: "Poppins-Thin";
 
-$font-poppins-bold: "Poppins-Bold";
+$font-default: $font-project-regular;
+
+// ----- Font-size ----- //
+$txt-size-small: 0.75rem; // 12 px
+$txt-size-lower: 0.875rem; // 14 px
+$txt-size-default: 1rem; // 16 px
+$txt-size-legend: 1.125rem; // 18 px
+$txt-size-regular: 1.25rem; // 20 px
+$txt-size-medium: 1.5rem; // 24 px
+$txt-size-large: 1.75rem; // 28 px
+$txt-size-xl: 2.25rem; // 36 px
+
+
+// ----- Poppins font ----- //
+@font-face {
+  font-family: $font-project-black;
+  src: url("../../assets/fonts/Poppins/Poppins-Black.ttf");
+}
+@font-face {
+  font-family: $font-project-bold;
+  src: url("../../assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: $font-project-extra-bold;
+  src: url("../../assets/fonts/Poppins/Poppins-ExtraBold.ttf");
+}
+@font-face {
+  font-family: $font-project-light;
+  src: url("../../assets/fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: $font-project-extra-light;
+  src: url("../../assets/fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: $font-project-medium;
+  src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: $font-project-regular;
+  src: url("../../assets/fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: $font-project-semi-bold;
+  src: url("../../assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: $font-project-thin;
+  src: url("../../assets/fonts/Poppins/Poppins-Thin.ttf");
+}
