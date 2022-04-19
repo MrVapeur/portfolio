@@ -3,4 +3,17 @@
 
 :host {
   font-family: $font-project-bold;
+  background-color: #e0e0e0;
+}
+
+.sc-header__btn-title {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  width: auto;
+  padding: $size-lower;
+
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
 }

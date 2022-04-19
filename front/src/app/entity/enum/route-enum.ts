@@ -3,3 +3,8 @@ export enum RouteEnum {
   NEWS = 'whats-up',
   CONTACT = 'contact',
 }
+
+export interface Route {
+  key: string,
+  value: string,
+}
