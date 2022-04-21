@@ -4,16 +4,24 @@
 :host {
   font-family: $font-project-bold;
   background-color: #e0e0e0;
+  display: flex;
+}
+
+.sc-header__title-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .sc-header__btn-title {
   text-transform: capitalize;
-  margin-bottom: 10px;
+  margin: 10px;
   width: auto;
+  font-weight: bold;
+  color: dimgray;
   padding: $size-lower;
 
   border-radius: 10px;
   background: #e0e0e0;
-  box-shadow:  20px 20px 60px #bebebe,
-  -20px -20px 60px #ffffff;
+  box-shadow:  5px 5px 15px #bebebe,
+  -5px -5px 15px #ffffff;
 }
